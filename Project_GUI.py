@@ -1959,8 +1959,6 @@ class DisplayDetailsPage(ttk.Frame):
 if __name__ == "__main__":
     try:
         root = App()
-        # Just for checking purpose
-        # Main_frame=MainUI(root)
         Main_frame = MainFrame(root)
         root.mainloop()
     except Exception as E:
