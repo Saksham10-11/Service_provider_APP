@@ -159,26 +159,6 @@ def GenerateOTP():
         OTP += str(digit)
     return OTP
 
-# Sends the OTP onto User's Mail
-
-
-def SendOTP():
-    OTP = GenerateOTP()
-    import smtplib
-
-    # Starts the STMP session
-    s = smtplib.SMTP('smtp.gmail.com', 587)
-    s.starttls()
-    # Senders Email ID and and password
-    s.login("Saksham123@gmail.com", "Hello@2023")
-    # message to be sent
-    message = f"Hello User , Your OTP to reset the Password is {OTP}"
-    # sending the mail to the reciver
-    s.sendmail("Saksham123@gmail.com",
-               "Sakshamsaipatwarpkd@gmail.com", message)
-    # terminating the STMP session
-    s.quit()
-
 
 # Displays the detailed info of the worker which user has asked for
 

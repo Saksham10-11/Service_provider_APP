@@ -58,3 +58,20 @@ Traceback (most recent call last):
     self.tk.call(
 _tkinter.TclError: expected integer but got "0.9"
 
+Time : 2023-03-27 11:28:47.053875
+Exception : couldn't open "Images_icons\Main_icon.png": no such file or directory
+Traceback (most recent call last):
+  File "c:\Users\2251075 SAKSHAM\Desktop\GIT\Project_GUI.py", line 1961, in <module>
+    root = App()
+           ^^^^^
+  File "c:\Users\2251075 SAKSHAM\Desktop\GIT\Project_GUI.py", line 20, in __init__
+    self.root_configure()
+  File "c:\Users\2251075 SAKSHAM\Desktop\GIT\Project_GUI.py", line 33, in root_configure
+    self.photo_icon = PhotoImage(file='Images_icons\\Main_icon.png')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\2251075 SAKSHAM\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 4120, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "C:\Users\2251075 SAKSHAM\AppData\Local\Programs\Python\Python311\Lib\tkinter\__init__.py", line 4065, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: couldn't open "Images_icons\Main_icon.png": no such file or directory
+

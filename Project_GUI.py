@@ -1679,10 +1679,6 @@ class DisplayPage(ttk.Frame):
         self.my_canvas.configure(yscrollcommand=self.my_scrollbar.set)
         self.my_canvas.configure(scrollregion=(0, 0, 400, 1100))
 
-        """************************TO FIX THIS ISSUE LATER***********************************"""
-        # self.my_canvas.bind('<Configure>', lambda x: self.my_canvas.configure(
-        #     scrollregion=self.my_canvas.bbox('all')))
-
         self.frame = Frame(self.my_canvas, width=400, height=510, bg='white')
         self.frame.pack()
 
